@@ -4,9 +4,27 @@ const CHECKOUT = 'https://pay.kiwify.com/0G4oDKm'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 pt-20 pb-16">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJnIiB3aWR0aD0iODAiIGhlaWdodD0iODAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgzMCkiPjxwYXRoIGQ9Ik0wIDQwaDgwbTQwIDB2ODBtLTQwIDB2LTgwbTQwIDB2LTgwIiBzdHJva2U9InJnYmEoMjEyLDE2OCw4MywwLjA0KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGEwYTBhIi8+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnKSIvPjwvc3ZnPg==')] opacity-40" />
-      <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-dark" />
+    <section className="relative min-h-screen flex items-center justify-center px-4 pt-20 pb-16 overflow-hidden">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect fill='%230a0a0a' width='100' height='100'/%3E%3C/svg%3E"
+        className="absolute inset-0 w-full h-full object-cover opacity-30"
+      >
+        <source
+          src="https://cdn.pixabay.com/video/2023/06/19/168329-838580848_large.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark" />
+      <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/40" />
+      {/* Animated cross overlay */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.04]">
+        <div className="text-[40rem] font-serif text-gold animate-pulse">&#x271E;</div>
+      </div>
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <FadeIn>
           <h1 className="font-montserrat text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight mb-4">
