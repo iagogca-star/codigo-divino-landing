@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-dark text-white font-inter;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-block bg-gold text-black font-montserrat font-bold px-8 py-4 rounded-lg text-lg
+           hover:bg-gold-light transition-all duration-300 transform hover:scale-105;
+  }
+  .btn-gold-lg {
+    @apply btn-gold text-xl px-10 py-5;
+  }
+  .section-title {
+    @apply font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold text-gold mb-6;
+  }
+  .section-subtitle {
+    @apply text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed;
+  }
+  .card-dark {
+    @apply bg-[#111] border border-white/5 rounded-xl p-6 hover:border-gold/30 transition-all duration-300;
+  }
+  .star {
+    @apply text-gold text-xl;
+  }
+  .check-green {
+    @apply text-green-check;
+  }
+  .price-old {
+    @apply line-through text-gray-500 text-xl;
+  }
+  .price-current {
+    @apply text-4xl md:text-5xl font-montserrat font-bold text-gold;
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
