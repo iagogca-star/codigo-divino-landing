@@ -43,13 +43,6 @@ export default function Hero() {
             </div>
           </div>
         </FadeIn>
-        <FadeIn delay={700}>
-          <div className="flex flex-col items-center gap-2 mb-8">
-            <div className="flex items-center gap-2 text-green-check font-semibold">&#10004; Entiende la Biblia de forma sencilla</div>
-            <div className="flex items-center gap-2 text-green-check font-semibold">&#10004; Más de 5 bonos exclusivos</div>
-            <div className="flex items-center gap-2 text-green-check font-semibold">&#10004; Acceso inmediato de por vida</div>
-          </div>
-        </FadeIn>
         <FadeIn delay={800}>
           <a href={CHECKOUT} target="_blank" rel="noopener noreferrer" className="btn-gold-lg inline-block animate-pulse">
             Quiero Entender la Biblia Hoy
