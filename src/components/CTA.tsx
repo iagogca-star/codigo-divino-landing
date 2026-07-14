@@ -1,4 +1,4 @@
-const CHECKOUT = 'https://pay.kiwify.com/0G4oDKm'
+const CHECKOUT = 'https://pay.hotmart.com/N106665538A?checkoutMode=10'
 
 export default function CTA({ label = 'Sí, Quiero Mi Acceso Inmediato', large = false }: { label?: string; large?: boolean }) {
   return (

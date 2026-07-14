@@ -1,6 +1,6 @@
 import FadeIn from './FadeIn'
 
-const CHECKOUT = 'https://pay.kiwify.com/0G4oDKm'
+const CHECKOUT = 'https://pay.hotmart.com/N106665538A?checkoutMode=10'
 
 export default function Hero() {
   return (
@@ -61,13 +61,11 @@ export default function Hero() {
         </FadeIn>
         <FadeIn delay={500}>
           <div className="max-w-xs mx-auto mb-8">
-            <div className="aspect-[3/4] rounded-xl border border-gold/20 bg-gradient-to-b from-gold/10 to-dark flex items-center justify-center p-6">
-              <div className="text-center">
-                <div className="text-5xl mb-3">&#x271E;</div>
-                <div className="font-montserrat text-gold text-2xl font-bold">CÓDIGO DIVINO</div>
-                <div className="text-gray-400 text-sm mt-2">Guía Completa de Estudio Bíblico</div>
-              </div>
-            </div>
+            <img
+              src="https://files.nextgocard.com.br/banners/5c86c745-7521-4814-bd38-865babec4322.gif"
+              alt="Código Divino"
+              className="w-full rounded-xl shadow-2xl"
+            />
           </div>
         </FadeIn>
         <FadeIn delay={600}>

@@ -9,12 +9,12 @@ const books = [
   { title: 'Estudio de Levítico', desc: 'El libro del culto explicado de forma tan sencilla que finalmente lo entenderás.' },
 ]
 
-const gradients = [
-  'from-amber-900/60 to-dark',
-  'from-blue-900/60 to-dark',
-  'from-emerald-900/60 to-dark',
-  'from-red-900/60 to-dark',
-  'from-purple-900/60 to-dark',
+const covers = [
+  'https://files.nextgocard.com.br/banners/a4efead7-5139-42e5-a334-0e840046be50.png',
+  'https://files.nextgocard.com.br/banners/d8db22ee-035e-493e-bfdd-3371370a9904.png',
+  'https://files.nextgocard.com.br/banners/d5df6a20-2deb-4daa-a8d4-c8d6a33389a7.png',
+  'https://files.nextgocard.com.br/banners/2d50b8df-2e09-459e-acb0-ece2e5c9d32a.png',
+  'https://files.nextgocard.com.br/banners/1779512b-3194-4798-b812-68ef79c10091.png',
 ]
 
 export default function QueIncluye() {
@@ -33,11 +33,8 @@ export default function QueIncluye() {
           {books.map((book, i) => (
             <FadeIn key={i} delay={i * 100}>
               <div className="card-dark group h-full flex flex-col">
-                <div className={`aspect-[2/3] rounded-lg mb-4 bg-gradient-to-br ${gradients[i]} border border-gold/10 flex items-center justify-center p-4 group-hover:border-gold/40 transition-all`}>
-                  <div className="text-center">
-                    <div className="text-3xl mb-2 text-gold/70">&#x271E;</div>
-                    <h3 className="font-montserrat text-white text-sm font-semibold leading-tight">{book.title}</h3>
-                  </div>
+                <div className="aspect-[2/3] rounded-lg mb-4 overflow-hidden border border-gold/10 group-hover:border-gold/40 transition-all">
+                  <img src={covers[i]} alt={book.title} className="w-full h-full object-cover" />
                 </div>
                 <p className="text-gray-400 text-sm flex-grow">{book.desc}</p>
               </div>

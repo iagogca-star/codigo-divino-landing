@@ -1,6 +1,6 @@
 import FadeIn from './FadeIn'
 
-const CHECKOUT = 'https://pay.kiwify.com/0G4oDKm'
+const CHECKOUT = 'https://pay.hotmart.com/N106665538A?checkoutMode=10'
 
 const items = [
   '5 materiales de estudio bíblico completos que transformarán tu comprensión de la Biblia',

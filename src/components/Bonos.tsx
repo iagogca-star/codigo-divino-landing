@@ -9,12 +9,12 @@ const bonos = [
   { title: 'Manual de Interpretación Bíblica para Principiantes', desc: 'Aprende a interpretar la Biblia de forma correcta, sin errores y con confianza.', valor: 'USD 29' },
 ]
 
-const gradients = [
-  'from-yellow-900/60 to-dark',
-  'from-indigo-900/60 to-dark',
-  'from-teal-900/60 to-dark',
-  'from-rose-900/60 to-dark',
-  'from-cyan-900/60 to-dark',
+const covers = [
+  'https://files.nextgocard.com.br/banners/abb109d7-23f2-4d69-9290-889114bddd41.png',
+  'https://files.nextgocard.com.br/banners/defe563a-d705-4ae4-9be9-456b1bc049e8.png',
+  'https://files.nextgocard.com.br/banners/53762028-0b18-43d3-8e8a-a591f075ab53.png',
+  'https://files.nextgocard.com.br/banners/03e00670-b3b5-4767-850c-546a0d55d99c.png',
+  'https://files.nextgocard.com.br/banners/96d2685d-4293-4003-9493-ec6047e98dac.png',
 ]
 
 export default function Bonos() {
@@ -33,11 +33,8 @@ export default function Bonos() {
           {bonos.map((bono, i) => (
             <FadeIn key={i} delay={i * 100}>
               <div className="card-dark group flex flex-col">
-                <div className={`aspect-[2/3] rounded-lg mb-4 bg-gradient-to-br ${gradients[i]} border border-gold/10 flex items-center justify-center p-4 group-hover:border-gold/40 transition-all`}>
-                  <div className="text-center">
-                    <div className="text-3xl mb-2 text-gold/70">&#9734;</div>
-                    <h3 className="font-montserrat text-white text-sm font-semibold leading-tight">{bono.title}</h3>
-                  </div>
+                <div className="aspect-[2/3] rounded-lg mb-4 overflow-hidden border border-gold/10 group-hover:border-gold/40 transition-all">
+                  <img src={covers[i]} alt={bono.title} className="w-full h-full object-cover" />
                 </div>
                 <p className="text-gray-400 text-sm flex-grow mb-2">{bono.desc}</p>
                 <p className="text-xs text-gray-500">
