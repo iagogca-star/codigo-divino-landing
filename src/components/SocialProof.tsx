@@ -44,13 +44,13 @@ export default function SocialProof() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <FadeIn key={i} delay={i * 150}>
-              <div className="card-dark">
+              <div className="card-dark h-full flex flex-col">
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(5)].map((_, si) => (
                     <span key={si} className="star text-sm">&#9733;</span>
                   ))}
                 </div>
-                <p className="text-gray-300 mb-4 italic">"{t.text}"</p>
+                <p className="text-gray-300 mb-4 italic flex-grow">"{t.text}"</p>
                 <div>
                   <p className="font-montserrat font-semibold text-white">{t.name}</p>
                   <p className="text-gray-500 text-sm">{t.role}</p>

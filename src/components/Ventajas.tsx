@@ -33,10 +33,10 @@ export default function Ventajas() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {ventajas.map((v, i) => (
             <FadeIn key={i} delay={i * 100}>
-              <div className="card-dark text-center group">
+              <div className="card-dark text-center group h-full flex flex-col">
                 <div className="text-5xl mb-4" dangerouslySetInnerHTML={{ __html: v.icon }} />
                 <h3 className="font-montserrat text-xl font-semibold text-white mb-3">{v.title}</h3>
-                <p className="text-gray-400">{v.desc}</p>
+                <p className="text-gray-400 flex-grow">{v.desc}</p>
               </div>
             </FadeIn>
           ))}

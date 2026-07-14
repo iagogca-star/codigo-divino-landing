@@ -33,10 +33,10 @@ export default function QuienPuede() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {items.map((item, i) => (
             <FadeIn key={i} delay={i * 100}>
-              <div className="card-dark text-center group">
+              <div className="card-dark text-center group h-full flex flex-col">
                 <div className="text-5xl mb-4" dangerouslySetInnerHTML={{ __html: item.icon }} />
                 <h3 className="font-montserrat text-xl font-semibold text-white mb-3">{item.title}</h3>
-                <p className="text-gray-400">{item.desc}</p>
+                <p className="text-gray-400 flex-grow">{item.desc}</p>
               </div>
             </FadeIn>
           ))}
