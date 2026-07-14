@@ -3,23 +3,23 @@ import FadeIn from './FadeIn'
 const ventajas = [
   {
     icon: '&#128214;',
-    title: 'Contenido Estructurado',
-    desc: 'Material organizado por temas y libros, facilitando el estudio sistemático de la Biblia.',
+    title: 'Entendimiento Profundo',
+    desc: 'Comprende el verdadero significado de cada pasaje bíblico sin necesidad de conocimientos previos. La Biblia deja de ser un libro cerrado.',
   },
   {
     icon: '&#128200;',
-    title: 'Aprendizaje Progresivo',
-    desc: 'Diseñado para llevarte de lo básico a lo profundo, paso a paso y sin complicaciones.',
+    title: 'Crecimiento Espiritual',
+    desc: 'Diseñado para llevarte de lo básico a lo profundo paso a paso. Cada estudio fortalece tu fe y transforma tu relación con Dios.',
   },
   {
     icon: '&#128176;',
     title: 'Acceso Inmediato',
-    desc: 'Recibe todo el material en formato digital al instante después de tu compra.',
+    desc: 'Comienza hoy mismo. Recibe todo el material en tu correo al instante y estudia a tu ritmo, cuando y donde quieras.',
   },
   {
     icon: '&#128736;',
-    title: 'Práctico y Aplicable',
-    desc: 'Cada lección incluye aplicaciones prácticas para tu vida diaria y espiritual.',
+    title: 'Aplicación en tu Vida',
+    desc: 'Cada lección incluye reflexiones y aplicaciones prácticas que transforman tu día a día y te acercan más a Dios.',
   },
 ]
 

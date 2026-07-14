@@ -1,11 +1,11 @@
 import FadeIn from './FadeIn'
 
 const items = [
-  'Eres un líder o profesor de iglesia que busca material estructurado para enseñar.',
-  'Eres estudiante de teología o de la Biblia y quieres profundizar tu conocimiento.',
-  'Eres una familia que desea estudiar la Biblia junta de forma organizada.',
-  'Eres una persona ocupada pero deseas mantener una vida de oración y estudio constante.',
-  'Eres alguien que nunca entendió bien la Biblia y quiere empezar desde cero con claridad.',
+  'Has leído la Biblia y no entiendes lo que significan muchos pasajes —quieres claridad sin tener que estudiar teología.',
+  'Eres líder o maestro de iglesia y necesitas material estructurado que realmente transforme a tu congregación.',
+  'Deseas fortalecer tu fe con estudios bíblicos profundos pero sencillos, que puedas aplicar a tu vida diaria.',
+  'Quieres tener una rutina de oración y estudio constante, pero no sabes por dónde empezar ni cómo mantenerla.',
+  'Buscas un regalo espiritual para tu familia —algo que los acerque más a Dios y los una en el estudio de la Palabra.',
 ]
 
 export default function ParaTi() {

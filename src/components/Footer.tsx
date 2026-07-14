@@ -13,6 +13,8 @@ export default function Footer() {
           </h3>
           <p className="text-gray-400 mb-8 text-lg">
             Únete a más de 4.000 cristianos que ya descubrieron el placer de entender la Biblia.
+            <br />
+            <span className="text-gold font-semibold">Pago único de $9.90 — sin mensualidades</span>
           </p>
         </FadeIn>
         <FadeIn delay={200}>
@@ -22,7 +24,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="btn-gold-lg inline-block mb-10"
           >
-            Quiero Mi Acceso Ahora
+            Sí, Quiero Entender la Biblia
           </a>
         </FadeIn>
         <FadeIn delay={400}>

@@ -2,11 +2,11 @@ import CTA from './CTA'
 import FadeIn from './FadeIn'
 
 const books = [
-  { title: '170 Bosquejos de Josué', desc: 'Una guía completa de 170 bosquejos sobre el libro de Josué.', cover: '/covers/josue.jpg' },
-  { title: '30 Días de Oración con Jesús', desc: 'Un mes de oraciones guiadas para fortalecer tu comunicación con Dios.', cover: '/covers/oracion.jpg' },
-  { title: 'Estudio de Génesis', desc: 'Análisis profundo del libro de los orígenes, versículo por versículo.', cover: '/covers/genesis.jpg' },
-  { title: 'Estudio de Éxodo', desc: 'Descubre el poderoso Éxodo y su significado para tu fe.', cover: '/covers/exodo.jpg' },
-  { title: 'Estudio de Levítico', desc: 'Explora el libro del culto y la santidad de una forma clara.', cover: '/covers/levitico.jpg' },
+  { title: '170 Bosquejos de Josué', desc: 'Comprende la conquista de la tierra prometida y aprende a liderar con fe como Josué.', cover: '/covers/josue.jpg' },
+  { title: '30 Días de Oración con Jesús', desc: 'Transforma tu vida de oración en solo 30 días con versículos guiados del Pentateuco.', cover: '/covers/oracion.jpg' },
+  { title: 'Estudio de Génesis', desc: 'Descubre el origen de todo —la creación, el propósito de Dios y las raíces de tu fe.', cover: '/covers/genesis.jpg' },
+  { title: 'Estudio de Éxodo', desc: 'Vive el poder de la redención mientras exploras la liberación de Israel y su significado para ti.', cover: '/covers/exodo.jpg' },
+  { title: 'Estudio de Levítico', desc: 'Entiende el corazón de la santidad y cómo acercarte a Dios con confianza y reverencia.', cover: '/covers/levitico.jpg' },
 ]
 
 export default function QueIncluye() {
@@ -18,7 +18,7 @@ export default function QueIncluye() {
         </FadeIn>
         <FadeIn delay={200}>
           <p className="section-subtitle text-center mb-12">
-            5 materiales completos para tu crecimiento espiritual
+            Colección completa para transformar tu estudio bíblico
           </p>
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">

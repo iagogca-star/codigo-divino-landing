@@ -14,9 +14,23 @@ export default function Garantia() {
               Si en los primeros 7 días consideras que Código Divino no es para ti, te devolvemos
               el <strong className="text-gold">100% de tu dinero</strong> sin hacer preguntas.
             </p>
-            <p className="text-gray-400">
-              Tu satisfacción está garantizada. Así de simple.
+            <p className="text-gray-400 mb-8">
+              No hay riesgo. Si no te encanta, te devolvemos cada centavo.
             </p>
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <div className="flex items-center gap-2 text-gray-400">
+                <span className="text-green-check text-lg">&#10004;</span>
+                Pago 100% seguro
+              </div>
+              <div className="flex items-center gap-2 text-gray-400">
+                <span className="text-green-check text-lg">&#10004;</span>
+                Acceso inmediato
+              </div>
+              <div className="flex items-center gap-2 text-gray-400">
+                <span className="text-green-check text-lg">&#10004;</span>
+                Sin mensualidades
+              </div>
+            </div>
           </div>
         </FadeIn>
       </div>

@@ -2,12 +2,14 @@ import CTA from './CTA'
 import FadeIn from './FadeIn'
 
 const bonos = [
-  { title: 'Devocionales de Poder', desc: '30 días para profundizar tu fé.', cover: '/covers/devocionales.jpg' },
-  { title: 'Historias Bíblicas para toda la família', desc: 'Relatos bíblicos ilustrados para compartir en familia.', cover: '/covers/historias.jpg' },
-  { title: 'Los 10 Mandamientos', desc: 'Historia y Aplicación Espiritual.', cover: '/covers/mandamientos.jpg' },
-  { title: 'Los Milagros de Jesús', desc: 'Descubre el poder de los milagros de Jesús.', cover: '/covers/milagros.jpg' },
-  { title: 'Manual de Interpretación Bíblica para Principiantes', desc: 'Aprende a interpretar la Biblia de forma correcta.', cover: '/covers/manual.jpg' },
+  { title: 'Devocionales de Poder', desc: '30 días para profundizar tu fé y experimentar una transformación espiritual cada mañana.', cover: '/covers/devocionales.jpg', valor: 29 },
+  { title: 'Historias Bíblicas para toda la família', desc: 'Relatos bíblicos ilustrados que unirán a tu familia alrededor de la Palabra de Dios.', cover: '/covers/historias.jpg', valor: 27 },
+  { title: 'Los 10 Mandamientos', desc: 'Comprende la historia, el significado profundo y la aplicación espiritual de la Ley de Dios.', cover: '/covers/mandamientos.jpg', valor: 25 },
+  { title: 'Los Milagros de Jesús', desc: 'Descubre el poder transformador de los milagros de Jesús y cómo fortalecen tu fe hoy.', cover: '/covers/milagros.jpg', valor: 27 },
+  { title: 'Manual de Interpretación Bíblica para Principiantes', desc: 'Aprende a interpretar la Biblia correctamente con principios claros y prácticos.', cover: '/covers/manual.jpg', valor: 29 },
 ]
+
+const totalBonos = bonos.reduce((acc, b) => acc + b.valor, 0)
 
 export default function Bonos() {
   return (
@@ -35,11 +37,24 @@ export default function Bonos() {
                 </div>
                 <h3 className="font-montserrat text-white text-sm font-semibold leading-tight mb-2">{bono.title}</h3>
                 <p className="text-gray-400 text-sm flex-grow mb-3">{bono.desc}</p>
-                <p className="text-xs text-gray-500"><span className="price-old">DE $10</span> <span className="text-gold font-bold">Por $0</span></p>
+                <p className="text-xs text-gray-500">
+                  <span className="price-old">$ {bono.valor} USD</span>{' '}
+                  <span className="text-gold font-bold">GRATIS</span>
+                </p>
               </div>
             </FadeIn>
           ))}
         </div>
+        <FadeIn delay={500}>
+          <div className="text-center mb-10">
+            <p className="text-gray-400 text-lg mb-2">
+              Valor total de los bonos: <span className="price-old text-xl">${totalBonos} USD</span>
+            </p>
+            <p className="text-gold font-montserrat text-xl font-bold">
+              Hoy: <span className="text-2xl">$0 USD</span> — incluidos en tu compra
+            </p>
+          </div>
+        </FadeIn>
         <FadeIn delay={600}>
           <div className="text-center">
             <CTA />

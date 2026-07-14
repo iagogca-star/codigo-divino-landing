@@ -11,15 +11,16 @@ export default function Perdido() {
         </FadeIn>
         <FadeIn delay={200}>
           <p className="section-subtitle mb-6">
-            No estás solo. Muchos cristianos enfrentan la misma dificultad: abren la Biblia pero no saben por dónde empezar,
-            encuentran pasajes difíciles de entender o simplemente no logran mantener una rutina de estudio constante.
+            Abres la Biblia, lees... pero sientes que no terminas de entender. Los pasajes difíciles,
+            los nombres, las genealogías, los simbolismos... te preguntas si hay algo que se te escapa.
           </p>
         </FadeIn>
-        <FadeIn delay={400}>
+        <FadeIn delay={300}>
           <p className="text-gray-400 text-lg leading-relaxed mb-10">
-            Código Divino fue creado precisamente para resolver esto. Con explicaciones claras, un enfoque paso a paso
-            y materiales complementarios diseñados por expertos en teología, finalmente podrás entender la Biblia
-            de principio a fin y aplicar sus enseñanzas en tu día a día.
+            La buena noticia es que no necesitas años de seminario para comprender las Escrituras.
+            Código Divino fue creado precisamente para ti. Con explicaciones claras, un enfoque paso a paso
+            y materiales diseñados para cualquier persona —sin importar su nivel de conocimiento—
+            finalmente podrás entender la Biblia de principio a fin y aplicarla a tu vida.
           </p>
         </FadeIn>
         <FadeIn delay={600}>
