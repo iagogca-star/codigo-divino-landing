@@ -23,22 +23,15 @@ export default function Hero() {
           <h1 className="font-montserrat text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
             <span className="text-gold">CÓDIGO DIVINO:</span>
             <br />
-            <span className="text-white">La Biblia explicada de forma clara y práctica</span>
+            <span className="text-white">¿Lees la Biblia... pero sientes que nunca logras comprender su verdadero significado?</span>
           </h1>
         </FadeIn>
         <FadeIn delay={200}>
           <p className="section-subtitle mb-8">
-            Un material completo para entender las Escrituras, fortalecer tu fe y transformar tu vida espiritual.
+            Descubre una forma sencilla de entender las Escrituras desde Génesis hasta Apocalipsis, incluso si nunca has estudiado teología.
           </p>
         </FadeIn>
-        <FadeIn delay={400}>
-          <div className="flex items-center justify-center gap-1 mb-8">
-            {[...Array(5)].map((_, i) => (
-              <span key={i} className="star">&#9733;</span>
-            ))}
-            <span className="text-gray-400 ml-2 text-lg">4.9 / 5.0</span>
-          </div>
-        </FadeIn>
+        
         <FadeIn delay={600}>
           <div className="max-w-xs mx-auto mb-10">
             <div className="aspect-[3/4] rounded-xl border border-gold/20 bg-gradient-to-b from-gold/10 to-dark flex items-center justify-center p-6">
@@ -50,9 +43,16 @@ export default function Hero() {
             </div>
           </div>
         </FadeIn>
+        <FadeIn delay={700}>
+          <div className="flex flex-col items-center gap-2 mb-8">
+            <div className="flex items-center gap-2 text-green-check font-semibold">&#10004; Entiende la Biblia de forma sencilla</div>
+            <div className="flex items-center gap-2 text-green-check font-semibold">&#10004; Más de 5 bonos exclusivos</div>
+            <div className="flex items-center gap-2 text-green-check font-semibold">&#10004; Acceso inmediato de por vida</div>
+          </div>
+        </FadeIn>
         <FadeIn delay={800}>
           <a href={CHECKOUT} target="_blank" rel="noopener noreferrer" className="btn-gold-lg inline-block animate-pulse">
-            Quiero Mi Acceso Ahora
+            Quiero Entender la Biblia Hoy
           </a>
         </FadeIn>
       </div>
