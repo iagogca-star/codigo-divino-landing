@@ -3,28 +3,24 @@ import FadeIn from './FadeIn'
 
 const faqs = [
   {
-    q: '¿Cómo recibo el material después de la compra?',
-    a: 'Inmediatamente después de la compra, recibirás un enlace de descarga en tu correo electrónico. Todo el material está en formato digital (PDF) y puedes acceder desde cualquier dispositivo.',
+    q: '¿Cómo recibiré el material después de la compra?',
+    a: 'Inmediatamente después de la compra, recibirás un enlace de descarga en tu correo electrónico con acceso a todos los materiales en formato digital (PDF).',
   },
   {
-    q: '¿Funciona en el celular o tengo que tener computadora?',
-    a: 'Funciona perfectamente en celular, tablet, computadora o cualquier dispositivo con lector de PDF. Puedes estudiar donde quieras, cuando quieras.',
+    q: '¿El material es físico o digital?',
+    a: 'Todo el material es digital. Puedes descargarlo, imprimirlo o usarlo directamente en tu computadora, tablet o celular.',
   },
   {
-    q: '¿Necesito estudiar teología para entender el material?',
-    a: 'Para nada. Código Divino fue creado exactamente para quienes NO estudiaron teología. Las explicaciones son claras, sencillas y progresivas. Cualquier persona puede entenderlo.',
+    q: '¿Sirve para personas que recién comienzan a leer la Biblia?',
+    a: 'Sí. Código Divino está diseñado tanto para principiantes como para personas con experiencia. Las explicaciones son claras y progresivas.',
   },
   {
-    q: '¿Puedo descargar el material o solo es en línea?',
-    a: 'Puedes descargar todo el material y guardarlo en tus dispositivos. No necesitas internet para leerlo después de la descarga.',
+    q: '¿Cuánto tiempo tengo acceso al material?',
+    a: 'Una vez adquirido, tienes acceso ilimitado y de por vida a todos los materiales y futuras actualizaciones.',
   },
   {
-    q: '¿El pago es seguro?',
-    a: 'Sí. El pago se procesa a través de Kiwify, una plataforma líder en pagos digitales en América Latina. Tus datos están protegidos con encriptación de nivel bancario.',
-  },
-  {
-    q: '¿Tengo acceso vitalicio?',
-    a: 'Sí. Una vez que adquieres Código Divino, tienes acceso de por vida a todos los materiales y a las actualizaciones futuras sin costo adicional.',
+    q: '¿Ofrecen reembolso si no me gusta?',
+    a: 'Sí. Ofrecemos una garantía incondicional de 7 días. Si no estás satisfecho, te devolvemos el 100% de tu dinero.',
   },
 ]
 
@@ -37,10 +33,9 @@ export default function Faq() {
         <FadeIn>
           <h2 className="section-title text-center">Preguntas Frecuentes</h2>
         </FadeIn>
-        <p className="text-gray-400 text-center mb-10">Resuelve tus dudas antes de comprar</p>
-        <div className="mt-2 space-y-3">
+        <div className="mt-10 space-y-3">
           {faqs.map((faq, i) => (
-            <FadeIn key={i} delay={i * 60}>
+            <FadeIn key={i} delay={i * 80}>
               <div className="card-dark p-0 overflow-hidden">
                 <button
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
