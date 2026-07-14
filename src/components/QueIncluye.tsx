@@ -2,11 +2,11 @@ import CTA from './CTA'
 import FadeIn from './FadeIn'
 
 const books = [
-  { title: '170 Bosquejos de Josué', desc: 'Una guía completa de 170 bosquejos sobre el libro de Josué.' },
-  { title: '30 Días de Oración con Jesús', desc: 'Un mes de oraciones guiadas para fortalecer tu comunicación con Dios.' },
-  { title: 'Estudio de Génesis', desc: 'Análisis profundo del libro de los orígenes, versículo por versículo.' },
-  { title: 'Estudio de Éxodo', desc: 'Descubre el poderoso Éxodo y su significado para tu fe.' },
-  { title: 'Estudio de Levítico', desc: 'Explora el libro del culto y la santidad de una forma clara.' },
+  { title: '170 Bosquejos de Josué', desc: 'Comprende el verdadero significado de cada pasaje sin sentirte perdido.' },
+  { title: '30 Días de Oración con Jesús', desc: 'Transforma tu vida de oración en solo 30 días con una guía paso a paso.' },
+  { title: 'Estudio de Génesis', desc: 'Descubre el origen de todo desde una perspectiva clara que transformará tu fe.' },
+  { title: 'Estudio de Éxodo', desc: 'El poderoso mensaje de liberación que aún hoy tiene poder para cambiar tu vida.' },
+  { title: 'Estudio de Levítico', desc: 'El libro del culto explicado de forma tan sencilla que finalmente lo entenderás.' },
 ]
 
 const gradients = [
@@ -22,11 +22,11 @@ export default function QueIncluye() {
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <h2 className="section-title text-center">¿Qué incluye?</h2>
+          <h2 className="section-title text-center">Todo lo que Necesitas para Transformar tu Estudio Bíblico</h2>
         </FadeIn>
         <FadeIn delay={200}>
           <p className="section-subtitle text-center mb-12">
-            5 materiales completos para tu crecimiento espiritual
+            5 materiales diseñados para que la Biblia cobre vida en tus manos
           </p>
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
@@ -46,7 +46,7 @@ export default function QueIncluye() {
         </div>
         <FadeIn delay={600}>
           <div className="text-center">
-            <CTA />
+            <CTA label="Sí, Quiero Todo Este Contenido" />
           </div>
         </FadeIn>
       </div>

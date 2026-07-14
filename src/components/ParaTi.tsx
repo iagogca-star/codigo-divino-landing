@@ -1,11 +1,11 @@
 import FadeIn from './FadeIn'
 
 const items = [
-  'Eres un líder o profesor de iglesia que busca material estructurado para enseñar.',
-  'Eres estudiante de teología o de la Biblia y quieres profundizar tu conocimiento.',
-  'Eres una familia que desea estudiar la Biblia junta de forma organizada.',
-  'Eres una persona ocupada pero deseas mantener una vida de oración y estudio constante.',
-  'Eres alguien que nunca entendió bien la Biblia y quiere empezar desde cero con claridad.',
+  'Anhelas entender la Biblia pero los pasajes difíciles te hacen sentir frustrado y perdido.',
+  'Quieres crecer espiritualmente pero no tienes tiempo para estudiar teología profunda.',
+  'Deseas enseñar la Palabra a tu familia o congregación pero no encuentras material claro y confiable.',
+  'Has empezado a leer la Biblia varias veces pero siempre terminas abandonando por falta de guía.',
+  'Sabes que la Biblia tiene respuestas para tu vida pero necesitas alguien que te las explique de forma sencilla.',
 ]
 
 export default function ParaTi() {
@@ -13,7 +13,7 @@ export default function ParaTi() {
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <FadeIn>
-          <h2 className="section-title text-center">Este material es para ti si...</h2>
+          <h2 className="section-title text-center">Este material es para ti si…</h2>
         </FadeIn>
         <div className="space-y-4 mt-10">
           {items.map((item, i) => (
