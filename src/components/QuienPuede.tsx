@@ -4,22 +4,22 @@ const items = [
   {
     icon: '&#127891;',
     title: 'Profesores',
-    desc: 'Si enseñas en la iglesia o escuela dominical, este material te dará la estructura que necesitas para preparar lecciones claras y profundas.',
+    desc: 'Perfecto para maestros de escuela dominical y educadores cristianos que buscan material didáctico de calidad.',
   },
   {
     icon: '&#127942;',
     title: 'Estudiantes',
-    desc: 'Si tienes hambre de conocimiento pero los textos teológicos te abruman, aquí encontrarás explicaciones que realmente entiendes.',
+    desc: 'Ideal para quienes desean profundizar en el conocimiento bíblico con un enfoque claro y organizado.',
   },
   {
     icon: '&#127968;',
     title: 'Familias',
-    desc: 'Si deseas que tus hijos conozcan la Biblia de una forma amena y comprensible, este material es el puente que estabas buscando.',
+    desc: 'Un recurso valioso para el estudio bíblico en familia, con materiales adaptables para todas las edades.',
   },
   {
     icon: '&#127988;',
     title: 'Líderes de iglesia',
-    desc: 'Si guías a otros en su caminar espiritual, necesitas herramientas que hablen claro. Código Divino es tu aliado.',
+    desc: 'Herramienta esencial para pastores, líderes de grupos pequeños y ministerios de enseñanza.',
   },
 ]
 
@@ -28,7 +28,7 @@ export default function QuienPuede() {
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <h2 className="section-title text-center">¿Para Quién es Este Material?</h2>
+          <h2 className="section-title text-center">¿Quién puede usarlo?</h2>
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {items.map((item, i) => (
