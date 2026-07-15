@@ -41,7 +41,7 @@ export default function QueEs() {
             </div>
             <p className="text-gray-400 text-sm mb-4">Pago único — sin mensualidades</p>
             <a
-              href="https://pay.hotmart.com/N106665538A?checkoutMode=10"
+              href="https://pay.kiwify.com/0G4oDKm"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold-lg inline-block text-xl animate-pulse w-full"
