@@ -1,9 +1,24 @@
+import { useEffect, useRef } from 'react'
 import CTA from './CTA'
 import FadeIn from './FadeIn'
+import { trackEvent } from '../lib/meta-pixel'
 
 const CHECKOUT = 'https://pay.kiwify.com/0G4oDKm'
 
 export default function Hero() {
+  const tracked = useRef(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!tracked.current) {
+        tracked.current = true
+        trackEvent('ViewContent', { content_name: 'Hero' })
+      }
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 pt-20 pb-16 overflow-hidden">
       <video
@@ -44,7 +59,13 @@ export default function Hero() {
           </div>
         </FadeIn>
         <FadeIn delay={800}>
-          <a href={CHECKOUT} target="_blank" rel="noopener noreferrer" className="btn-gold-lg inline-block animate-pulse">
+          <a
+            href={CHECKOUT}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold-lg inline-block animate-pulse"
+            onClick={() => trackEvent('Lead')}
+          >
             Quiero Entender la Biblia Hoy
           </a>
         </FadeIn>

@@ -1,3 +1,5 @@
+import { trackEvent } from '../lib/meta-pixel'
+
 const CHECKOUT = 'https://pay.kiwify.com/0G4oDKm'
 
 const CTAS = [
@@ -16,12 +18,17 @@ export function getNextCTA(): string {
 }
 
 export default function CTA() {
+  function handleClick() {
+    trackEvent('Lead')
+  }
+
   return (
     <a
       href={CHECKOUT}
       target="_blank"
       rel="noopener noreferrer"
       className="btn-gold inline-block"
+      onClick={handleClick}
     >
       Sí, Quiero Entender la Biblia
     </a>

@@ -1,4 +1,6 @@
+import { useEffect, useRef } from 'react'
 import FadeIn from './FadeIn'
+import { trackEvent } from '../lib/meta-pixel'
 
 const CHECKOUT = 'https://pay.kiwify.com/0G4oDKm'
 
@@ -11,8 +13,29 @@ const items = [
 ]
 
 export default function Oferta() {
+  const tracked = useRef(false)
+
+  useEffect(() => {
+    const el = document.getElementById('oferta-section')
+    if (!el) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !tracked.current) {
+          tracked.current = true
+          trackEvent('ViewContent', { content_name: 'Oferta Especial' })
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section className="py-20 px-4 relative">
+    <section id="oferta-section" className="py-20 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-dark via-gold/5 to-dark" />
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <FadeIn>
@@ -39,6 +62,7 @@ export default function Oferta() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold-lg inline-block text-2xl px-12 py-6 animate-pulse shadow-lg shadow-gold/20 w-full"
+              onClick={() => trackEvent('Lead')}
             >
               Sí, Quiero Mi Acceso Inmediato
             </a>

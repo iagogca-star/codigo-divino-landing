@@ -12,7 +12,19 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1209086271343269');
-fbq('track', 'PageView');
+
+var pageViewEventId = Date.now() + '-' + Math.random().toString(36).slice(2,9);
+fbq('track', 'PageView', { event_id: pageViewEventId });
+
+fetch('/api/meta-event', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    event_name: 'PageView',
+    event_id: pageViewEventId,
+    event_time: Math.floor(Date.now() / 1000),
+  }),
+}).catch(function(){});
 </script>
 <!-- End Meta Pixel Code -->
     <script>
